@@ -37,7 +37,7 @@ function main()
 	repeat wait(100) until isSampAvailable()
     if not isSampLoaded() then return end
     while not isSampAvailable() do wait(100) end
-	autoupdate("", '['..string.upper(thisScript().name)..']: ', "arizona-rp.com")
+	autoupdate("https://raw.githubusercontent.com/nazpol9/Central-bank-hepler/master/CentralBank.lua", '['..string.upper(thisScript().name)..']: ', "arizona-rp.com")
 	sampAddChatMessage('{1288E8}[Bank Script]: {FFFFFF}Скрипт - Central Bank Helper v0.2 {28FF2B}успешно загружен.', -1)
 	sampAddChatMessage('{1288E8}[Bank Script]: {FFFFFF}Для работы пропишите {28FF2B}/cbhelp или нажмите F3', -1)
 	sampRegisterChatCommand('mb', cmd_mb)
